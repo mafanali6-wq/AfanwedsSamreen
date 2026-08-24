@@ -1,2 +1,8 @@
-Afan & Samreen Wedding Website
-Upload index.html, theme-bg.svg, bgm.mp3 and .nojekyll to the ROOT of your GitHub Pages repository.
+FINAL GITHUB UPLOAD
+Upload these files to the ROOT of your AfanwedsSamreen repository:
+- index.html
+- hero-design.png
+- pehle-bhi-main.mp3
+- .nojekyll
+
+The music starts after the guest taps Open Invitation, subject to browser playback rules.
