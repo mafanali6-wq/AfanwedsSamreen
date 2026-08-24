@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="7"/><feColorMatrix values="1 0 0 0 0.85  0 1 0 0 0.83  0 0 1 0 0.79  0 0 0 .08 0"/></filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdf9"/><stop offset="1" stop-color="#f7efe8"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fff8ee" stop-opacity=".95"/><stop offset="1" stop-color="#fff8ee" stop-opacity="0"/></radialGradient>
+  <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7a78f"/><stop offset=".5" stop-color="#b97961"/><stop offset="1" stop-color="#e3b59f"/></linearGradient>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<rect width="1080" height="1920" filter="url(#noise)" opacity=".34"/>
+<ellipse cx="540" cy="690" rx="480" ry="610" fill="url(#glow)"/>
+<!-- subtle islamic frame -->
+<path d="M110 1660V360Q110 180 280 180H800Q970 180 970 360V1660" fill="none" stroke="#d8b29f" stroke-width="3" opacity=".45"/>
+<path d="M140 1660V395Q140 235 300 235H780Q940 235 940 395V1660" fill="none" stroke="#ead5c9" stroke-width="2" opacity=".9"/>
+<!-- corner geometric motifs -->
+<g fill="none" stroke="url(#rg)" stroke-width="3" opacity=".55">
+ <g transform="translate(45 55)"><path d="M0 110L55 55 110 110 55 165z"/><path d="M55 0L110 55 55 110 0 55z"/><circle cx="55" cy="55" r="38"/></g>
+ <g transform="translate(925 55)"><path d="M0 110L55 55 110 110 55 165z"/><path d="M55 0L110 55 55 110 0 55z"/><circle cx="55" cy="55" r="38"/></g>
+ <g transform="translate(45 1700)"><path d="M0 110L55 55 110 110 55 165z"/><path d="M55 0L110 55 55 110 0 55z"/><circle cx="55" cy="55" r="38"/></g>
+ <g transform="translate(925 1700)"><path d="M0 110L55 55 110 110 55 165z"/><path d="M55 0L110 55 55 110 0 55z"/><circle cx="55" cy="55" r="38"/></g>
+</g>
+<!-- stylized floral garland top -->
+<g transform="translate(540 115)" opacity=".95">
+  <g fill="#f8f4ee" stroke="#d9c7bb" stroke-width="2">
+   <circle cx="-310" cy="40" r="70"/><circle cx="-190" cy="5" r="82"/><circle cx="-45" cy="-5" r="88"/><circle cx="105" cy="0" r="85"/><circle cx="260" cy="35" r="75"/>
+  </g>
+  <g fill="none" stroke="#8c9a7a" stroke-width="10" stroke-linecap="round" opacity=".75">
+   <path d="M-390 105Q-320 20-250 88"/><path d="M-250 76Q-160-30-70 72"/><path d="M-70 65Q30-25 120 70"/><path d="M120 72Q230-12 345 110"/>
+  </g>
+  <g fill="#9cab8a" opacity=".75">
+    <ellipse cx="-340" cy="72" rx="18" ry="38" transform="rotate(-35 -340 72)"/><ellipse cx="-275" cy="35" rx="16" ry="34" transform="rotate(25 -275 35)"/>
+    <ellipse cx="-115" cy="24" rx="18" ry="38" transform="rotate(-20 -115 24)"/><ellipse cx="60" cy="28" rx="18" ry="38" transform="rotate(20 60 28)"/>
+    <ellipse cx="225" cy="35" rx="17" ry="36" transform="rotate(-25 225 35)"/><ellipse cx="315" cy="75" rx="18" ry="38" transform="rotate(30 315 75)"/>
+  </g>
+</g>
+<!-- lanterns -->
+<g stroke="url(#rg)" fill="#fff8e8" stroke-width="5" opacity=".75">
+ <g transform="translate(175 315)"><line x1="0" y1="-145" x2="0" y2="0"/><path d="M-30 0h60l18 70-18 70h-60l-18-70z"/><circle cx="0" cy="70" r="16" fill="#f6d4a7" stroke="none" opacity=".7"/></g>
+ <g transform="translate(905 315)"><line x1="0" y1="-145" x2="0" y2="0"/><path d="M-30 0h60l18 70-18 70h-60l-18-70z"/><circle cx="0" cy="70" r="16" fill="#f6d4a7" stroke="none" opacity=".7"/></g>
+</g>
+<!-- mosque silhouette bottom -->
+<g fill="#dbcabd" opacity=".34" transform="translate(0 1200)">
+ <rect x="160" y="330" width="760" height="210" rx="8"/>
+ <path d="M370 330Q540 90 710 330z"/>
+ <rect x="205" y="160" width="55" height="370"/><path d="M190 160h85l-42-95z"/>
+ <rect x="820" y="160" width="55" height="370"/><path d="M805 160h85l-42-95z"/>
+ <rect x="120" y="245" width="40" height="285"/><path d="M110 245h60l-30-70z"/>
+ <rect x="920" y="245" width="40" height="285"/><path d="M910 245h60l-30-70z"/>
+ <circle cx="540" cy="105" r="26"/><rect x="536" y="50" width="8" height="65"/><path d="M540 42q26 20 0 40q14-20 0-40z"/>
+</g>
+<!-- bottom florals -->
+<g transform="translate(540 1745)" opacity=".95">
+ <g fill="#f8f4ee" stroke="#d9c7bb" stroke-width="2"><circle cx="-320" cy="50" r="75"/><circle cx="-170" cy="20" r="82"/><circle cx="0" cy="5" r="92"/><circle cx="170" cy="20" r="82"/><circle cx="320" cy="50" r="75"/></g>
+ <g fill="#9cab8a" opacity=".72"><ellipse cx="-390" cy="0" rx="18" ry="40" transform="rotate(-55 -390 0)"/><ellipse cx="-250" cy="-30" rx="16" ry="34" transform="rotate(25 -250 -30)"/><ellipse cx="250" cy="-30" rx="16" ry="34" transform="rotate(-25 250 -30)"/><ellipse cx="390" cy="0" rx="18" ry="40" transform="rotate(55 390 0)"/></g>
+</g>
+</svg>
