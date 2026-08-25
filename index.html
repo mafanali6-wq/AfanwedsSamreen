@@ -51,6 +51,34 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 .scroll-guide.show{display:flex}.scroll-guide.hide{opacity:0;transform:translate(-50%,12px)}
 @keyframes guidePulse{0%,100%{opacity:.68}50%{opacity:1}}@keyframes guideBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
+
+/* Final monogram */
+.as-monogram{font-family:"Great Vibes",cursive;font-size:clamp(48px,14vw,76px)!important;line-height:1;color:var(--rose);font-weight:400;letter-spacing:.02em;margin:8px 0 2px}
+
+/* Live Firebase guestbook */
+.guestbook-section{padding:22px 18px 18px}
+.guestbook-card{max-width:720px;margin:0 auto;padding:30px 20px;border:1px solid rgba(184,118,92,.24);border-radius:30px;background:rgba(255,250,246,.78);box-shadow:0 18px 48px rgba(87,56,43,.08);backdrop-filter:blur(8px)}
+.guestbook-kicker{text-align:center;text-transform:uppercase;letter-spacing:.24em;font-size:9px;color:var(--rose);font-weight:700}
+.guestbook-title{text-align:center;font-family:"Cormorant Garamond",serif;font-size:clamp(34px,10vw,50px);font-weight:500;color:var(--brown);margin:8px 0 4px}
+.guestbook-sub{text-align:center;font-size:13px;line-height:1.65;color:var(--muted);margin:0 auto 22px;max-width:470px}
+.guestbook-form{display:grid;gap:11px}
+.guestbook-form label{font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:var(--rose);font-weight:700;margin-left:4px}
+.guestbook-form input,.guestbook-form textarea{width:100%;box-sizing:border-box;border:1px solid rgba(184,118,92,.28);border-radius:16px;background:rgba(255,255,255,.76);color:var(--brown);font:inherit;font-size:16px;padding:14px 15px;outline:none;transition:border-color .2s,box-shadow .2s}
+.guestbook-form textarea{min-height:112px;resize:vertical;line-height:1.55}
+.guestbook-form input:focus,.guestbook-form textarea:focus{border-color:rgba(184,118,92,.72);box-shadow:0 0 0 3px rgba(184,118,92,.10)}
+.guestbook-submit{min-height:48px;border:0;border-radius:999px;background:linear-gradient(135deg,#b8765c,#cb8e73);color:white;text-transform:uppercase;letter-spacing:.17em;font-size:10px;font-weight:700;padding:14px 22px;cursor:pointer;box-shadow:0 10px 24px rgba(184,118,92,.20)}
+.guestbook-submit:disabled{opacity:.58;cursor:wait}
+.guestbook-status{display:none;margin-top:2px;padding:11px 13px;border-radius:14px;background:rgba(184,118,92,.08);color:var(--brown);font-size:12px;line-height:1.5;text-align:center}
+.wishes-heading{text-align:center;margin:30px 0 13px;font-family:"Cormorant Garamond",serif;font-size:29px;font-weight:500;color:var(--brown)}
+.wishes-list{display:grid;gap:12px}
+.wish-card{position:relative;padding:17px 17px 15px;border:1px solid rgba(184,118,92,.18);border-radius:20px;background:rgba(255,255,255,.67);overflow:hidden}
+.wish-card:before{content:"“";position:absolute;right:13px;top:-10px;font-family:"Cormorant Garamond",serif;font-size:66px;line-height:1;color:rgba(184,118,92,.12)}
+.wish-name{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;color:var(--brown);margin:0 0 5px}
+.wish-text{font-size:13px;line-height:1.65;color:var(--muted);margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.wish-date{margin-top:9px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:rgba(113,81,69,.62)}
+.wishes-empty{text-align:center;font-size:12px;line-height:1.6;color:var(--muted);padding:18px 6px}
+.guestbook-note{text-align:center;font-size:10px;line-height:1.5;color:var(--muted);margin:9px 0 0}
+
 </style></head>
 <body class="lock">
 <audio id="bgm" loop preload="auto" playsinline><source src="pehle-bhi-main.mp3" type="audio/mpeg"></audio>
@@ -61,7 +89,32 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 <section class="section center"><div class="section-inner glass reveal"><p class="kicker">A Word of Blessing</p><p class="arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا</p><blockquote class="quote">“And among His signs is that He created for you spouses from among yourselves, that you may find tranquillity in them; and He placed between you affection and mercy.”</blockquote><p class="qref">Qur’an 30:21</p></div></section>
 <section class="section"><div class="section-inner glass reveal"><div class="center"><h2 class="title">Meet Our Families</h2></div><article class="card family-card"><h3>Mohammed Afan Ali</h3><p class="role">The Groom</p><p class="meta"><strong>Son of</strong><br>Mr. Ashkar Ali &amp; Mrs. Shehar Banu<br><br><strong>Brother</strong><br>Mohammed Nowman Ali<br><br><strong>Home</strong><br>Tekkatte, Karnataka</p></article><article class="card family-card"><h3>Samreen Zainuddin Sheikh</h3><p class="role">The Bride</p><p class="meta"><strong>Daughter of</strong><br>Mr. B. Zainuddin Saheb &amp; Mrs. Sheikh Mumtaz Begum<br><br><strong>Sisters &amp; Brothers-in-law</strong><br>Nazneen Banu &amp; Mohammed Usaid<br>Saziya Banu &amp; Thabish Sheik<br>Safreen Zainuddin Sheikh<br><br><strong>Niece</strong><br>Zahrah Fatima<br><br><strong>Home</strong><br>Brahmavar, Karnataka</p></article></div></section>
 <section class="section"><div class="section-inner glass reveal"><div class="center"><p class="kicker">The Occasions</p><h2 class="title">Join Us</h2></div><article class="card"><h3>Nikah</h3><div class="event-grid"><div><span class="label">When</span><strong>Sunday, 13 September 2026</strong><p class="meta">11:30 AM<br>2nd Rabi’ al-Akhir 1448 AH</p></div><div><span class="label">Where</span><strong>Inaasan Auditorium</strong><p class="meta">Koppalangadi, Kapu, Udupi District</p></div></div><div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Inaasan+Auditorium+Kapu+Karnataka">Venue Location</a><a class="action" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+-+Afan+%26+Samreen&dates=20260913T060000Z/20260913T083000Z&location=Inaasan+Auditorium,+Kapu,+Karnataka">Add to Calendar</a></div></article><article class="card"><h3>Reception</h3><div class="event-grid"><div><span class="label">When</span><strong>Tuesday, 15 September 2026</strong><p class="meta">12:00 PM to 3:00 PM</p></div><div><span class="label">Where</span><strong>President Convention Center &amp; Crown Hall</strong><p class="meta">Tekkatte, Karnataka</p></div></div><div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=President+Convention+Center+Tekkatte+Karnataka">Venue Location</a><a class="action" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reception+-+Afan+%26+Samreen&dates=20260915T063000Z/20260915T093000Z&location=President+Convention+Center,+Tekkatte,+Karnataka">Add to Calendar</a></div></article></div></section>
-<footer class="footer"><div class="section-inner glass reveal"><p>Awaiting your presence and prayers</p><h2 class="title">Afan &amp; Samreen</h2><p>13 September 2026</p></div></footer>
+
+<section class="guestbook-section reveal" id="guestbook">
+  <div class="guestbook-card">
+    <div class="guestbook-kicker">With Love &amp; Duas</div>
+    <h2 class="guestbook-title">Leave Your Best Wishes</h2>
+    <p class="guestbook-sub">Share a little message for Afan &amp; Samreen. Your wish will be saved here for the couple and their guests to read.</p>
+
+    <form class="guestbook-form" id="guestbookForm">
+      <label for="wishName">Your Name</label>
+      <input id="wishName" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Enter your name" required>
+
+      <label for="wishMessage">Your Wishes</label>
+      <textarea id="wishMessage" name="wish" maxlength="600" placeholder="Write your best wishes…" required></textarea>
+
+      <button class="guestbook-submit" id="wishSubmit" type="submit">Send Wishes ♡</button>
+      <div class="guestbook-status" id="guestbookStatus" role="status" aria-live="polite"></div>
+      <p class="guestbook-note">Messages are shared publicly on this wedding guestbook.</p>
+    </form>
+
+    <h3 class="wishes-heading">Wishes for Afan &amp; Samreen</h3>
+    <div class="wishes-list" id="wishesList">
+      <div class="wishes-empty">Loading wishes…</div>
+    </div>
+  </div>
+</section>
+<footer class="footer"><div class="section-inner glass reveal"><p>Awaiting your presence and prayers</p><div class="as-monogram" aria-label="A and S">A&amp;S</div><p>13 September 2026</p></div></footer>
 </main>
 <script>
 const cover=document.getElementById('cover'),openBtn=document.getElementById('open'),audio=document.getElementById('bgm'),scrollGuide=document.getElementById('scrollGuide');audio.volume=.24;
@@ -69,4 +122,163 @@ let opening=false;async function openInvitation(){if(opening)return;opening=true
 const target=new Date('2026-09-13T11:30:00+05:30').getTime();function tick(){const x=Math.max(0,target-Date.now()),a=[Math.floor(x/86400000),Math.floor(x%86400000/3600000),Math.floor(x%3600000/60000),Math.floor(x%60000/1000)];['days','hours','mins','secs'].forEach((id,i)=>document.getElementById(id).textContent=String(a[i]).padStart(2,'0'))}tick();setInterval(tick,1000);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.09});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 function burst(){for(let i=0;i<22;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.setProperty('--drift',(Math.random()*150-75)+'px');p.style.animationDuration=(4+Math.random()*4)+'s';p.style.animationDelay=(Math.random()*1.5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),9000)}}
-</script></body></html>
+
+</script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp,
+  query,
+  orderBy,
+  limit,
+  onSnapshot
+} from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCqVL1rygJJ7G63O-biOAFDH0GCJ19TeXU",
+  authDomain: "afanwedssamreen.firebaseapp.com",
+  projectId: "afanwedssamreen",
+  storageBucket: "afanwedssamreen.firebasestorage.app",
+  messagingSenderId: "175247281763",
+  appId: "1:175247281763:web:63cabe93adfbd628c13256"
+};
+
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
+
+const form = document.getElementById("guestbookForm");
+const nameInput = document.getElementById("wishName");
+const messageInput = document.getElementById("wishMessage");
+const submitButton = document.getElementById("wishSubmit");
+const statusBox = document.getElementById("guestbookStatus");
+const wishesList = document.getElementById("wishesList");
+
+function showStatus(message, isError = false) {
+  statusBox.textContent = message;
+  statusBox.style.display = "block";
+  statusBox.style.background = isError ? "rgba(160,72,64,.09)" : "rgba(184,118,92,.08)";
+}
+
+function formatWishDate(timestamp) {
+  if (!timestamp || typeof timestamp.toDate !== "function") return "";
+  try {
+    return timestamp.toDate().toLocaleDateString(undefined, {
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    });
+  } catch {
+    return "";
+  }
+}
+
+function renderWishes(snapshot) {
+  wishesList.replaceChildren();
+
+  if (snapshot.empty) {
+    const empty = document.createElement("div");
+    empty.className = "wishes-empty";
+    empty.textContent = "Be the first to leave a beautiful wish for the couple ♡";
+    wishesList.appendChild(empty);
+    return;
+  }
+
+  snapshot.forEach((docSnap) => {
+    const data = docSnap.data();
+
+    const card = document.createElement("article");
+    card.className = "wish-card";
+
+    const name = document.createElement("h4");
+    name.className = "wish-name";
+    name.textContent = typeof data.name === "string" ? data.name : "Guest";
+
+    const wish = document.createElement("p");
+    wish.className = "wish-text";
+    wish.textContent = typeof data.wish === "string" ? data.wish : "";
+
+    card.append(name, wish);
+
+    const dateText = formatWishDate(data.createdAt);
+    if (dateText) {
+      const date = document.createElement("div");
+      date.className = "wish-date";
+      date.textContent = dateText;
+      card.appendChild(date);
+    }
+
+    wishesList.appendChild(card);
+  });
+}
+
+const latestWishes = query(
+  collection(db, "wishes"),
+  orderBy("createdAt", "desc"),
+  limit(30)
+);
+
+onSnapshot(
+  latestWishes,
+  renderWishes,
+  (error) => {
+    console.error("Guestbook read error:", error);
+    wishesList.innerHTML = "";
+    const errorMessage = document.createElement("div");
+    errorMessage.className = "wishes-empty";
+    errorMessage.textContent = "Wishes could not be loaded right now. Please try again shortly.";
+    wishesList.appendChild(errorMessage);
+  }
+);
+
+let lastSubmitAt = 0;
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const name = nameInput.value.trim();
+  const wish = messageInput.value.trim();
+
+  if (!name || !wish) {
+    showStatus("Please enter both your name and your wishes.", true);
+    return;
+  }
+
+  if (name.length > 80 || wish.length > 600) {
+    showStatus("Please keep the name under 80 characters and the wish under 600 characters.", true);
+    return;
+  }
+
+  const now = Date.now();
+  if (now - lastSubmitAt < 10000) {
+    showStatus("Please wait a few seconds before sending another wish.", true);
+    return;
+  }
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending…";
+  showStatus("Saving your wishes…");
+
+  try {
+    await addDoc(collection(db, "wishes"), {
+      name,
+      wish,
+      createdAt: serverTimestamp()
+    });
+
+    lastSubmitAt = Date.now();
+    form.reset();
+    showStatus("Thank you ♡ Your wishes have been added to the guestbook.");
+  } catch (error) {
+    console.error("Guestbook submit error:", error);
+    showStatus("Your wish could not be saved. Please try again.", true);
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Send Wishes ♡";
+  }
+});
+</script>
+
+</body></html>
