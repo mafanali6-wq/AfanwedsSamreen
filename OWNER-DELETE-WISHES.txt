@@ -1,0 +1,11 @@
+OWNER - HOW TO DELETE A WISH
+
+1. Open Firebase Console.
+2. Open project: afanwedssamreen
+3. Go to Firestore Database > Data.
+4. Open the collection: wishes
+5. Tap the wish/document you want to remove.
+6. Choose Delete document.
+
+This is intentionally owner-only.
+The public wedding website cannot delete or edit wishes.

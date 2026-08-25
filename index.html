@@ -53,7 +53,7 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 
 
 /* Final monogram */
-.as-monogram{font-family:"Great Vibes",cursive;font-size:clamp(48px,14vw,76px)!important;line-height:1;color:var(--rose);font-weight:400;letter-spacing:.02em;margin:8px 0 2px}
+.as-monogram{font-family:"Great Vibes",cursive;font-size:clamp(58px,16vw,88px)!important;line-height:.9;color:var(--rose);font-weight:400;letter-spacing:.01em;margin:14px 0 8px;display:inline-block;position:relative;padding:0 18px}.as-monogram:before,.as-monogram:after{content:"";position:absolute;top:52%;width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--rose));opacity:.55}.as-monogram:before{right:100%}.as-monogram:after{left:100%;transform:scaleX(-1)}
 
 /* Live Firebase guestbook */
 .guestbook-section{padding:22px 18px 18px}
@@ -69,7 +69,7 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 .guestbook-submit{min-height:48px;border:0;border-radius:999px;background:linear-gradient(135deg,#b8765c,#cb8e73);color:white;text-transform:uppercase;letter-spacing:.17em;font-size:10px;font-weight:700;padding:14px 22px;cursor:pointer;box-shadow:0 10px 24px rgba(184,118,92,.20)}
 .guestbook-submit:disabled{opacity:.58;cursor:wait}
 .guestbook-status{display:none;margin-top:2px;padding:11px 13px;border-radius:14px;background:rgba(184,118,92,.08);color:var(--brown);font-size:12px;line-height:1.5;text-align:center}
-.wishes-heading{text-align:center;margin:30px 0 13px;font-family:"Cormorant Garamond",serif;font-size:29px;font-weight:500;color:var(--brown)}
+
 .wishes-list{display:grid;gap:12px}
 .wish-card{position:relative;padding:17px 17px 15px;border:1px solid rgba(184,118,92,.18);border-radius:20px;background:rgba(255,255,255,.67);overflow:hidden}
 .wish-card:before{content:"“";position:absolute;right:13px;top:-10px;font-family:"Cormorant Garamond",serif;font-size:66px;line-height:1;color:rgba(184,118,92,.12)}
@@ -108,7 +108,6 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
       <p class="guestbook-note">Messages are shared publicly on this wedding guestbook.</p>
     </form>
 
-    <h3 class="wishes-heading">Wishes for Afan &amp; Samreen</h3>
     <div class="wishes-list" id="wishesList">
       <div class="wishes-empty">Loading wishes…</div>
     </div>
@@ -280,5 +279,14 @@ form.addEventListener("submit", async (event) => {
   }
 });
 </script>
+
+
+<!--
+OWNER NOTE:
+Guests can add/read wishes from the public site.
+For security, guests cannot edit/delete wishes.
+As the Firebase project owner, you can delete any wish at:
+Firebase Console > Firestore Database > Data > wishes > select document > Delete.
+-->
 
 </body></html>
