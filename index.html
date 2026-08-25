@@ -13,8 +13,8 @@
 <meta property="og:title" content="Afan &amp; Samreen | Wedding Invitation">
 <meta property="og:description" content="Nikah · Sunday, 13 September 2026 · Kapu, Karnataka — You are lovingly invited.">
 <meta property="og:url" content="https://mafanali6-wq.github.io/AfanwedsSamreen/">
-<meta property="og:image" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg">
-<meta property="og:image:secure_url" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg">
+<meta property="og:image" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg?v=3">
+<meta property="og:image:secure_url" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg?v=3">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Afan &amp; Samreen | Wedding Invitation">
 <meta name="twitter:description" content="Nikah · Sunday, 13 September 2026 · Kapu, Karnataka — You are lovingly invited.">
-<meta name="twitter:image" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg">
+<meta name="twitter:image" content="https://mafanali6-wq.github.io/AfanwedsSamreen/preview.jpg?v=3">
 
 <meta name="theme-color" content="#f7eee7">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,10 +44,17 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 .footer{padding:90px 20px 95px;text-align:center}.footer p{font-size:9px;color:var(--muted)}
 .reveal{opacity:0;transform:translateY(32px) scale(.99);transition:opacity .95s ease,transform .95s cubic-bezier(.2,.75,.2,1)}.reveal.show{opacity:1;transform:none}.petal{position:fixed;z-index:2;top:-20px;width:9px;height:15px;border-radius:80% 20% 80% 20%;background:rgba(217,169,147,.36);pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(560deg);opacity:0}}
 @media(min-width:650px){.section{padding:110px 24px}.event-grid{grid-template-columns:1fr 1fr}.actions{grid-template-columns:1fr 1fr}.glass{padding:54px 38px}.card{padding:35px 30px}}@media(max-width:390px){.section{padding-left:13px;padding-right:13px}.glass{padding:39px 17px}.count{gap:5px}.count span{font-size:6px}.arabic{font-size:22px;max-width:94%}.arabic.decorative{font-size:27px;max-width:92%}.host{font-size:23px}.family-card .meta{font-size:13px}.family-card .meta strong{font-size:12.5px}.person{font-size:43px;max-width:94%}}
+
+.cover-guide{position:absolute;z-index:6;left:50%;bottom:max(18px,calc(env(safe-area-inset-bottom) + 12px));transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;color:#9a654f;text-transform:uppercase;letter-spacing:.2em;font-size:8px;font-weight:600;pointer-events:none;text-shadow:0 1px 8px rgba(255,250,245,.9);animation:guidePulse 1.8s ease-in-out infinite}
+.cover-guide .chev,.scroll-guide .chev{font-size:17px;line-height:1;animation:guideBounce 1.5s ease-in-out infinite}
+.scroll-guide{position:fixed;z-index:20;left:50%;bottom:max(18px,calc(env(safe-area-inset-bottom) + 12px));transform:translateX(-50%);display:none;flex-direction:column;align-items:center;gap:4px;padding:9px 16px;border:1px solid rgba(184,118,92,.22);border-radius:999px;background:rgba(255,250,245,.90);box-shadow:0 9px 28px rgba(88,55,42,.12);backdrop-filter:blur(7px);color:#9a654f;text-transform:uppercase;letter-spacing:.16em;font-size:7.5px;font-weight:600;pointer-events:none;transition:opacity .45s ease,transform .45s ease}
+.scroll-guide.show{display:flex}.scroll-guide.hide{opacity:0;transform:translate(-50%,12px)}
+@keyframes guidePulse{0%,100%{opacity:.68}50%{opacity:1}}@keyframes guideBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
 </style></head>
 <body class="lock">
 <audio id="bgm" loop preload="auto" playsinline><source src="pehle-bhi-main.mp3" type="audio/mpeg"></audio>
-<section id="cover" class="cover"><img class="hero-img" src="hero-design.png" alt="Afan Ali and Samreen Z Sheikh wedding invitation"><button id="open" class="open-hit" aria-label="Open invitation"></button></section>
+<section id="cover" class="cover"><img class="hero-img" src="hero-design.png" alt="Afan Ali and Samreen Z Sheikh wedding invitation"><button id="open" class="open-hit" aria-label="Open invitation"></button><div class="cover-guide" aria-hidden="true"><span>Tap to open</span><span class="chev">⌄</span></div></section><div id="scrollGuide" class="scroll-guide" aria-hidden="true"><span>Scroll down to explore</span><span class="chev">⌄</span></div>
 <main class="site-bg">
 <section class="section center"><div class="section-inner glass reveal"><p class="kicker">Wedding Invitation</p><p class="arabic decorative">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p><p class="body">In the name of Allah, the Most Gracious, the Most Merciful</p><div class="ornament"></div><p class="host">Together with our families</p><p class="body">we joyfully invite you to celebrate the Nikah of</p><h2 class="person">Mohammed Afan Ali</h2><p class="with">with</p><h2 class="person">Samreen Zainuddin Sheikh</h2><p class="body">We warmly invite you to join us on this blessed occasion and keep the couple in your prayers.</p></div></section>
 <section class="section center"><div class="section-inner glass reveal"><p class="kicker">Counting Down</p><h2 class="title">Until the Nikah</h2><div class="count"><div><b id="days">00</b><span>Days</span></div><div><b id="hours">00</b><span>Hours</span></div><div><b id="mins">00</b><span>Minutes</span></div><div><b id="secs">00</b><span>Seconds</span></div></div></div></section>
@@ -57,8 +64,8 @@ main{position:relative}.section{padding:88px 18px;position:relative}.section-inn
 <footer class="footer"><div class="section-inner glass reveal"><p>Awaiting your presence and prayers</p><h2 class="title">Afan &amp; Samreen</h2><p>13 September 2026</p></div></footer>
 </main>
 <script>
-const cover=document.getElementById('cover'),openBtn=document.getElementById('open'),audio=document.getElementById('bgm');audio.volume=.24;
-let opening=false;async function openInvitation(){if(opening)return;opening=true;cover.classList.add('out');document.body.classList.remove('lock');try{audio.currentTime=0;await audio.play()}catch(e){}burst();setTimeout(()=>cover.remove(),950)}openBtn.addEventListener('click',openInvitation);
+const cover=document.getElementById('cover'),openBtn=document.getElementById('open'),audio=document.getElementById('bgm'),scrollGuide=document.getElementById('scrollGuide');audio.volume=.24;
+let opening=false;async function openInvitation(){if(opening)return;opening=true;cover.classList.add('out');document.body.classList.remove('lock');try{audio.currentTime=0;await audio.play()}catch(e){}burst();setTimeout(()=>{cover.remove();scrollGuide.classList.add('show')},950)}openBtn.addEventListener('click',openInvitation);window.addEventListener('scroll',()=>{if(scrollGuide&&window.scrollY>24){scrollGuide.classList.add('hide');setTimeout(()=>scrollGuide.classList.remove('show'),450)}},{passive:true});
 const target=new Date('2026-09-13T11:30:00+05:30').getTime();function tick(){const x=Math.max(0,target-Date.now()),a=[Math.floor(x/86400000),Math.floor(x%86400000/3600000),Math.floor(x%3600000/60000),Math.floor(x%60000/1000)];['days','hours','mins','secs'].forEach((id,i)=>document.getElementById(id).textContent=String(a[i]).padStart(2,'0'))}tick();setInterval(tick,1000);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.09});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 function burst(){for(let i=0;i<22;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.setProperty('--drift',(Math.random()*150-75)+'px');p.style.animationDuration=(4+Math.random()*4)+'s';p.style.animationDelay=(Math.random()*1.5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),9000)}}
